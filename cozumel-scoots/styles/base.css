@@ -10,15 +10,15 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
-  .roboto-bold {
+.roboto-bold {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
-  }
+}
 
-  header { 
+header { 
     background-image: linear-gradient(to right, #ffa600 , #e7e702);
     color: var(--primary-font-color);
     padding: 1em;
@@ -51,6 +51,10 @@ body {
     color: #ffedbb;
     border: 2px solid #af2626;
     background-color: #af2626;
+}
+
+h1 {
+    font-size: 1.8rem;
 }
 
 h3 {
@@ -130,6 +134,7 @@ nav , .navigation, a{
     font-weight: 500;
     color: white;
     text-decoration: none;
+    padding: 1em;
 }
 
 .navigation a.active {
