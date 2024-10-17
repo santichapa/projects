@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | BA. South Play</title>
+    <meta name="description" content="A page containing a description of the page startup and a simple form to submit feedback.">
+    <meta name="author" content="Santiago Ariel Chaparro">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/menu.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>BA. South Play</h1>
+        <button id="menu"></button>
+        <nav>
+            <a href="index.html" >Home</a>
+            <a href="about.html" class="active">About Us</a>
+            <a href="form.html">Sign Up</a>
+            <a href="tournaments.html">Tournaments</a>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
+                <source media="(min-width: 500px )" srcset="images/hero-medium.webp">
+                <img src="images/hero-small.webp" alt="A picture of a football field">
+            </picture>
+            <div class="calltoaction">
+                <h2>About Us</h2>
+            </div>
+        </div>
+        <section>
+            <h2>Our Story</h2>
+            <p>In the bustling town of Lomas de Zamora, there lived a passionate soccer enthusiast named Alex. Alex was an avid player, coach, and all-around soccer aficionado. Every weekend, they would lace up their cleats, grab their trusty ball, and head out to the local soccer fields to kick around with friends and strangers alike.
+                One sunny afternoon, as Alex was sipping coffee at the neighborhood café, they overheard a conversation between two parents. The parents were lamenting how difficult it was to find suitable soccer fields for their kids’ practice sessions. The fields were scattered across the town, and information about tournaments was equally elusive. It seemed like everyone was playing a game of hide-and-seek with the soccer fields!
+                Alex’s eyes sparkled with an idea. What if there was a centralized platform where soccer enthusiasts could easily locate fields, check availability, and even sign up for local tournaments? A digital hub that would bring together players, coaches, and organizers—a place where the love for soccer could flourish.
+                And so, fueled by a burning desire to make soccer more accessible, Alex embarked on a mission.
+                The name for their creation came naturally: “BA South Play”. It was catchy, memorable, and conveyed the essence of their project—a spot where soccer dreams took flight in the southern part of Buenos Aires.
+                As the website took shape, Alex reached out to local soccer clubs, coaches, and city officials. They pitched BA South Play as a community-driven initiative, emphasizing its potential to boost sports participation, foster friendships, and promote healthy competition. The response was overwhelmingly positive. Soon, the town rallied behind BA South Play, offering field data, tournament schedules, and even volunteering to help with maintenance.
+                On the day of BA South Play’s official launch, the sun painted the sky in shades of gold. Alex stood at the edge of the largest soccer field in Lomas de Zamora, watching players dribble, parents cheer, and coaches strategize.
+                And so, the South region of Buenos Aires’s soccer landscape transformed. Coaches booked slots with a few clicks, and players discovered new teammates through pickup games. Tournaments flourished, and the sense of community grew stronger.
+                Now weknowing that we have created something enduring—a legacy of passion, collaboration, and the beautiful game that unites us all.</p>
+        </section>
+        <h2>Share Your Feedback With Us!</h2>
+        <form  method="get" action="thanks.html" class="wf">
+            <fieldset>
+                <legend>User Information</legend>
+                <label>First Name <input type="text" name="fname"></label>
+                <label>Last Name <input type="text" name="lname"></label>
+                <label>Email <input type="email" name="email" required placeholder="someone@mail.com"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Feedback</legend>
+                <textarea name="feedback" id="feednack" placeholder="write your feedback here..." rows="6"></textarea>
+            </fieldset>
+            <input type="submit" value="Send Feedback">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | BA. South Play | Buenos Aires, Argentina</p>
+        <p>Santiago A. Chaparro</p>
+    </footer>
+</body>
+</html>
