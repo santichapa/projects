@@ -1,0 +1,95 @@
+@media screen and (min-width: 650px) {
+    /* ========== NAVIGATION/MENU ========== */
+
+    #menu {
+        display: none;
+    }
+
+    ul.menuLinks, ul.menuLinks.open {
+        display: flex;
+    }
+
+    nav {
+        grid-template-rows: 1fr;
+        font-size: 1.1rem;
+    }
+
+    /* ========== HOME PAGE ========== */
+
+    .homemain {
+        display: grid;
+        margin: 0;
+        grid-template-columns: auto auto;
+    }
+
+    .hero-img{
+        width: 100%;
+    }
+
+    .hero-img a {
+        font-size: 2rem;
+    }
+
+    .card#events {
+        grid-row: 2/3;
+        width: 100%;
+    }
+
+    .card#info {
+        grid-row: 2/3;
+        grid-column: 2/3;
+        width: 100%;
+    }
+
+    .card#contributors {
+        grid-row: 3/4;
+        grid-column: 1/3;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ========== JOIN PAGE ========== */
+
+    .joinmain {
+        display: flex;
+    }
+
+    .wf legend {
+        font-size: 1.4rem;
+    }
+
+    .wf fieldset, 
+    .wf label, 
+    .wf input {
+        font-size: 1.1rem;
+    }
+
+    .wf input[type="submit"] {
+        margin: -2rem 2% 2rem 2%;
+    }
+
+    .memberships {
+        margin-top: 3.25em;
+    }
+
+    /* ========== DISCOVER PAGE ========== */
+    .discovermain {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 1em;
+    }
+
+    .discover-images {
+        width: 400px;
+    }
+
+    .discover-images img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .calendar iframe{
+        max-width: 500px;
+    }
+}

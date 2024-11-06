@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | LDZ Chamber</title>
+    <meta name="description" content="A landing page for the Chamber of commerce in Lomas de Zamora">
+    <meta name="author" content="Santiago Ariel Chaparo">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+    <meta property="og:title" content="Home | LDZ Chamber" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://santichapa.github.io/wdd231/images/meta-img.webp" />
+    <meta property="og:url" content="https://santichapa.github.io/wdd231/chamber/" />
+    <meta name="twitter:card" content="summary" />
+</head>
+<body>
+    <header>
+        <img src="images/chamber-logo.jpg" alt="The Lomas de Zamora Chamber of commerce Logo" width="64" height="64">
+        <h1>Lomas de Zamora</h1>
+        <p>Chamber of Commerce</p>
+        <button id="menu"></button>
+    </header>
+    <nav id="navigation">
+        <ul class="menuLinks">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main class="homemain">
+        <!-- <div class="hero-image">
+            <img src="images/hero-large.webp" alt="City of Lomas de Zamora" width="1000" height="auto">
+            <a href="join.html">Join Us!</a>
+        </div> -->
+        <div class="hero-image">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/hero-small.webp">
+                <source media="(max-width: 1000px)" srcset="images/hero-large.webp">
+                <img src="images/hero-large.webp" alt="a hero image">
+            </picture>
+            <a href="join.html">Join Us!</a>
+        </div>
+        <section class="card" id="events">
+            <h2>Current Events</h2>
+            <ul>
+                <li> <strong>The Chamber of Commerce meet and greet </strong> | Wednesdays & Saturdays 7:00 PM</li>
+                <li> <strong>Business Pitch Competitions at Lomas de Zamora Municipal Park</strong> | Thursdays 5:00 PM </li>
+                <li>... and other upcoming events!</li>
+            </ul>
+        </section>
+        <section class="card" id="info">
+            <h2>Information</h2>
+            <ul id="display-forecast">
+                <li>Lomas de Zamora, Buenos Aires today:</li>
+                <li><img src="https://placehold.co/20/webp" id="weather-icon" alt="An icon representing the weather" width="20"><span id="current-temp"></span>&deg; C, <span id="weather-desc"></span>, Windspeed: <span id="windspeed"></span> km/h</li>
+                <li>Windchill Index: <span id="windchill"></span> °C</li>
+            </ul>
+            <h3>3-day Forecast</h3>
+            <ul id="display-3d-forecast"></ul>
+        </section>
+        <section class="card" id="contributors">
+            <h2>Premium Contributors</h2>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Lomas de Zamora Chamber of Commerce  Molina Arrotea 1501, Lomas de Zamora | ✉️info@ldzchamber.org 📞11 2344 555 📍Location Map</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
